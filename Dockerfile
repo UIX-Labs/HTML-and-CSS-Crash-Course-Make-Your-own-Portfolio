@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install Yarn and app dependencies
 COPY package*.json ./
-RUN npm install -g yarn && 
+RUN yarn 
 
 # Bundle app source
 COPY . .
